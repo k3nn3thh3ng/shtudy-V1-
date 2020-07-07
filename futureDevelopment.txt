@@ -1,0 +1,12 @@
+//future development
+
+*Technologies
+	  // passport       = require('passport'),
+	  // LocalStrategy  = require('passport-local'),
+	  
+	  // expressSession = require('express-session'), CONSIDER CHANGING
+	  // User           = require('./models/user'), SECOND PHASE
+	  
+	  // nodemailer     = require("nodemailer"), THIRD PHASE
+	  // {google}       = require("googleapis"), THIRD PHASE
+	  // OAuth2         = google.auth.OAuth2, THIRD PHASE
