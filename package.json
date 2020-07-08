@@ -2,21 +2,24 @@
   "name": "shtudy",
   "version": "1.0.0",
   "description": "creating the biggest basic academic repository",
-  "main": "app.js",
 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node app.js"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
+    "lint": "eslint ."
   },
   "author": "kenneth H",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.26.3",
     "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
-    "mongoose": "^5.9.21",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "mongoose": "^5.9.21"
   }
 }

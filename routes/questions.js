@@ -9,7 +9,8 @@ const express       = require("express"),
 
 //routes(Questions)
 router.get('/', function(req,res){
-	res.render('home');
+	var list = ["item1", "item2", "item3"];
+    res.json(list);
 });
 
 // router.get('/new', function(req,res){
